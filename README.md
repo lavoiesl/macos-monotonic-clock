@@ -13,6 +13,10 @@ Outputs miliseconds of a monotonic clock; an ever-increasing counter.
 make
 ```
 
+### Download from GitHub
+
+You can download a precompiled `monotonic` from the [release page](https://github.com/lavoiesl/macos-monotonic-clock/releases/latest).
+
 ### Running
 
 ```bash
@@ -29,7 +33,7 @@ monotonic
 ### Using clib
 
 ```bash
-clib install Shopify/macos-monotonic-clock
+clib install lavoiesl/macos-monotonic-clock
 ```
 
 ### Output example

@@ -1,6 +1,6 @@
 {
   "name": "monotonic",
-  "version": "0.0.0",
+  "version": "master",
   "repo": "lavoiesl/macos-monotonic-clock",
   "description": "Outputs miliseconds of a monotonic clock; an ever-increasing counter.",
   "keywords": ["macos", "monotonic", "clock"],
