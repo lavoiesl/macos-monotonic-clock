@@ -2,5 +2,12 @@ language: c
 os: osx
 script: make && make test
 compiler:
-  - clang
-  - gcc
+- clang
+- gcc
+deploy:
+  provider: releases
+  api_key:
+    secure: PB8/EF6RU9jRZ4S8gbGuz6tXAYUBxzHSSFADkiT/8XHi2xMYWHzwnkIUKqqpKJLoKE7p6OIqIVgGnuRCeGDDdcGz/7bUC0Etz/dOIKHke+E7PZ/dz2fwu/7OuzF1wEY69W/YM5kKbpZa3p7BICI7t/8IGPiyGjRXccE9B7DeIuVZibAy0eTzwbZpVgIwZZ0Z98O/b5Sh7nDvDjDpYN7zcd0zZAkCYwzWmU7f8850UEMbwSXn1qGlzVv+k3KJhaRfsM3sQWhQxMsoAedjM5/0suLU8fGYdH0Q/lNvd/ckh9PY2mec5kIHmI+p797uZZOqkUAbmTd8ambU7ECHUA2KBwT2G2JHXiQAdcvEk1/Mq71FqLemRQ3TKCEeICoy8wW+ZQdSg1zirSFPr8zBrGxoA3q/lT3TQ0eCTNt4jCT4uQGrjULAoUkxu453PjiGVyblJafoeup6leI/9TFsQGUsecIHGACQOVJ0H6QHn8bAObfGwyAMmBxFZUWAOoQUrOcu4ZsmDdhUbuOMRXQ3ZbQMnrxxy7+tyf9ua8/jYrAOaXGDEFnl9hinrSFJXkyKpAdEJfeQ7NSTal+UtcWaFnHVJgzo4rDUCYzn9GB3JI6evmxa/5NrWH84Wbf1PnXlwMQqr7AdRsfX9QwKZCu3Dh2vUrR1tLtw3tuS0qHOoSvPfoc=
+  file: monotonic
+  on:
+    tags: true
