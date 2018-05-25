@@ -20,4 +20,3 @@ int main ( ) {
     uint64_t systemUptimeMs = systemUptimeNanoseconds / (1000 * 1000);
     printf("%"PRIu64"\n", systemUptimeMs);
 }
-
